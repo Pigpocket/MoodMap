@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		372CDCE920506EFA003FBF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDCE820506EFA003FBF73 /* AppDelegate.swift */; };
-		372CDCEB20506EFA003FBF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDCEA20506EFA003FBF73 /* ViewController.swift */; };
 		372CDCEE20506EFA003FBF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372CDCEC20506EFA003FBF73 /* Main.storyboard */; };
 		372CDCF020506EFA003FBF73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372CDCEF20506EFA003FBF73 /* Assets.xcassets */; };
 		372CDCF320506EFA003FBF73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372CDCF120506EFA003FBF73 /* LaunchScreen.storyboard */; };
 		372CDCFE20506EFA003FBF73 /* MoodMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDCFD20506EFA003FBF73 /* MoodMapTests.swift */; };
 		372CDD0920506EFA003FBF73 /* MoodMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD0820506EFA003FBF73 /* MoodMapUITests.swift */; };
+		372CDD172050756F003FBF73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD162050756F003FBF73 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		372CDCE520506EFA003FBF73 /* MoodMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		372CDCE820506EFA003FBF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		372CDCEA20506EFA003FBF73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		372CDCED20506EFA003FBF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		372CDCEF20506EFA003FBF73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		372CDCF220506EFA003FBF73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		372CDD0420506EFA003FBF73 /* MoodMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		372CDD0820506EFA003FBF73 /* MoodMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodMapUITests.swift; sourceTree = "<group>"; };
 		372CDD0A20506EFA003FBF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372CDD162050756F003FBF73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		372CDCE720506EFA003FBF73 /* MoodMap */ = {
 			isa = PBXGroup;
 			children = (
+				372CDD162050756F003FBF73 /* LoginViewController.swift */,
 				372CDCE820506EFA003FBF73 /* AppDelegate.swift */,
-				372CDCEA20506EFA003FBF73 /* ViewController.swift */,
 				372CDCEC20506EFA003FBF73 /* Main.storyboard */,
 				372CDCEF20506EFA003FBF73 /* Assets.xcassets */,
 				372CDCF120506EFA003FBF73 /* LaunchScreen.storyboard */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				372CDCEB20506EFA003FBF73 /* ViewController.swift in Sources */,
+				372CDD172050756F003FBF73 /* LoginViewController.swift in Sources */,
 				372CDCE920506EFA003FBF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
