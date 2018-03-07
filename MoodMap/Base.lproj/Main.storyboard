@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1867.5" y="116.19718309859155"/>
         </scene>
-        <!--View Controller-->
+        <!--QuestionsVC-->
         <scene sceneID="uoF-hc-5DS">
             <objects>
-                <viewController id="fC7-p8-77y" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionVC" id="fC7-p8-77y" customClass="QuestionsVC" customModule="MoodMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fSa-qN-fn0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -186,13 +186,20 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-0u-ddb">
                                                 <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="001-arrows" translatesAutoresizingMaskIntoConstraints="NO" id="CKH-ve-96t">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyG-hy-495">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="64"/>
-                                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
-                                                    </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="002-arrows-1" translatesAutoresizingMaskIntoConstraints="NO" id="DGn-cu-iKk">
+                                                        <state key="normal" image="001-arrows"/>
+                                                        <connections>
+                                                            <action selector="previousQuestion:" destination="fC7-p8-77y" eventType="touchUpInside" id="FbF-4P-Dvd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0og-mL-wID">
                                                         <rect key="frame" x="160" y="0.0" width="160" height="64"/>
-                                                    </imageView>
+                                                        <state key="normal" image="002-arrows-1"/>
+                                                        <connections>
+                                                            <action selector="nextQuestion:" destination="fC7-p8-77y" eventType="touchUpInside" id="met-5U-533"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -264,6 +271,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="589-8M-QcH"/>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="lyG-hy-495" id="lFr-aj-LWm"/>
+                        <outlet property="forwardButton" destination="0og-mL-wID" id="Ac3-Bk-pQj"/>
+                        <outlet property="questionLabel" destination="YhP-wm-0Rw" id="TfA-hc-DVd"/>
+                        <outlet property="slider" destination="E02-bv-qPC" id="QSe-a8-U0Y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QzD-o2-zNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

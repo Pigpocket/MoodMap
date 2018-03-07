@@ -16,6 +16,7 @@
 		372CDD172050756F003FBF73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD162050756F003FBF73 /* LoginViewController.swift */; };
 		372CDD1920507F46003FBF73 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD1820507F46003FBF73 /* TableViewController.swift */; };
 		372CDD1B2050802D003FBF73 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD1A2050802D003FBF73 /* TableViewCell.swift */; };
+		372CDD1D20509F33003FBF73 /* QuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD1C20509F33003FBF73 /* QuestionsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		372CDD162050756F003FBF73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		372CDD1820507F46003FBF73 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		372CDD1A2050802D003FBF73 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		372CDD1C20509F33003FBF73 /* QuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				372CDCF420506EFA003FBF73 /* Info.plist */,
 				372CDD1820507F46003FBF73 /* TableViewController.swift */,
 				372CDD1A2050802D003FBF73 /* TableViewCell.swift */,
+				372CDD1C20509F33003FBF73 /* QuestionsVC.swift */,
 			);
 			path = MoodMap;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				372CDD172050756F003FBF73 /* LoginViewController.swift in Sources */,
 				372CDD1B2050802D003FBF73 /* TableViewCell.swift in Sources */,
 				372CDD1920507F46003FBF73 /* TableViewController.swift in Sources */,
+				372CDD1D20509F33003FBF73 /* QuestionsVC.swift in Sources */,
 				372CDCE920506EFA003FBF73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
