@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UITableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     // MARK: Outlets
     
