@@ -28,6 +28,15 @@ class QuestionsVC: UIViewController {
     // MARK: Actions
     
     @IBAction func previousQuestion(_ sender: Any) {
+        
+        if selectedIndex != 0 {
+            selectedIndex -= 1
+        } else {
+            selectedIndex = 4
+        }
+        
+        questionLabel.text = questions[selectedIndex]
+        
     }
     
     @IBAction func nextQuestion(_ sender: Any) {
