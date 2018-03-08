@@ -47,8 +47,8 @@ class QuestionsVC: UIViewController {
     
     @IBAction func slideAction(_ sender: Any) {
         
-        
     }
+    
     @IBAction func nextQuestion(_ sender: Any) {
         
         if selectedIndex != 4 {
@@ -62,35 +62,66 @@ class QuestionsVC: UIViewController {
         pageIndex.text = "\(selectedIndex + 1) / 5"
     }
     
+    
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Slider actions for UIControlEvents
         slider.addTarget(self, action: #selector(self.sliderDidEndSliding(notification:)), for: ([.touchUpInside,.touchUpOutside]))
+
+        //self.navigationItem.rightBarButtonItem?.isEnabled = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         
         questionLabel.text = questions[0]
-
+        
     }
     
     @objc func sliderDidEndSliding(notification: NSNotification) {
         
         let percentValue = slider.value as NSNumber
         print(slider.value)
+
         Rating.shared.communication = slider.value
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .percent
     
         percentLabel.text = numberFormatter.string(from: percentValue)
         
-        print("Communication rating = \(Rating.shared.communication)")
+        switch selectedIndex {
+        case 0:
+            Rating.shared.communication = slider.value
+            print("Communication = \(Rating.shared.communication)")
+        case 1:
+            Rating.shared.management = slider.value
+            print("Management = \(Rating.shared.management)")
+        case 2:
+            Rating.shared.schedule = slider.value
+            print("Schedule = \(Rating.shared.schedule)")
+        case 3:
+            Rating.shared.resources = slider.value
+            print("Resources = \(Rating.shared.resources)")
+        case 4:
+            Rating.shared.productivity = slider.value
+            print("Productivity = \(Rating.shared.productivity)")
+        default:
+            break
+        }
+        
+        if Rating.shared.communication == 0 || Rating.shared.management == 0 || Rating.shared.productivity == 0 || Rating.shared.resources == 0 || Rating.shared.schedule == 0 {
+            self.navigationItem.rightBarButtonItem?.isEnabled = false
+        } else {
+            self.navigationItem.rightBarButtonItem?.isEnabled = true
+        }
+
     }
 
 }
+
 
 extension Double {
     func roundTo(decimalPlaces: Int) -> String {
