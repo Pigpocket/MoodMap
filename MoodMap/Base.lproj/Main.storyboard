@@ -207,6 +207,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="KAW-Lu-zHC">
                                         <rect key="frame" x="12" y="410" width="290" height="31"/>
+                                        <connections>
+                                            <action selector="slideAction:" destination="fC7-p8-77y" eventType="valueChanged" id="lcO-gY-V97"/>
+                                        </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRw-Hx-2XV" userLabel="Percent Label">
                                         <rect key="frame" x="132.5" y="375.5" width="55" height="26.5"/>
@@ -294,6 +297,7 @@
                     <connections>
                         <outlet property="backButton" destination="K1l-8a-Iuu" id="6wI-Fe-Aes"/>
                         <outlet property="forwardButton" destination="ju7-ov-ESP" id="ekZ-gY-leL"/>
+                        <outlet property="percentLabel" destination="sRw-Hx-2XV" id="Uef-QG-h5Z"/>
                         <outlet property="questionLabel" destination="YhP-wm-0Rw" id="TfA-hc-DVd"/>
                         <outlet property="slider" destination="KAW-Lu-zHC" id="l9C-qv-3oB"/>
                     </connections>

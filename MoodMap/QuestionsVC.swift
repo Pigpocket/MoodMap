@@ -21,6 +21,7 @@ class QuestionsVC: UIViewController {
     
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var percentLabel: UILabel!
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
@@ -39,6 +40,10 @@ class QuestionsVC: UIViewController {
         
     }
     
+    @IBAction func slideAction(_ sender: Any) {
+        
+        
+    }
     @IBAction func nextQuestion(_ sender: Any) {
         
         if selectedIndex != 4 {
@@ -51,16 +56,32 @@ class QuestionsVC: UIViewController {
     }
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Slider actions for UIControlEvents
+        slider.addTarget(self, action: #selector(self.sliderDidEndSliding(notification:)), for: ([.touchUpInside,.touchUpOutside]))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidLoad()
         
         questionLabel.text = questions[0]
+
     }
     
-    
-    
+    @objc func sliderDidEndSliding(notification: NSNotification) {
+        let percentValue = slider.value as NSNumber
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .percent
+        percentLabel.text = numberFormatter.string(from: percentValue)
+    }
+
+}
+
+extension Double {
+    func roundTo(decimalPlaces: Int) -> String {
+        return NSString(format: "%.\(decimalPlaces)f" as NSString, self) as String
+    }
 }
