@@ -18,6 +18,7 @@
 		372CDD1B2050802D003FBF73 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD1A2050802D003FBF73 /* TableViewCell.swift */; };
 		372CDD1D20509F33003FBF73 /* QuestionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD1C20509F33003FBF73 /* QuestionsVC.swift */; };
 		372CDD1F2050B862003FBF73 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD1E2050B862003FBF73 /* Ratings.swift */; };
+		372CDD212050D1C7003FBF73 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372CDD202050D1C7003FBF73 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		372CDD1A2050802D003FBF73 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		372CDD1C20509F33003FBF73 /* QuestionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsVC.swift; sourceTree = "<group>"; };
 		372CDD1E2050B862003FBF73 /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		372CDD202050D1C7003FBF73 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				372CDD1A2050802D003FBF73 /* TableViewCell.swift */,
 				372CDD1C20509F33003FBF73 /* QuestionsVC.swift */,
 				372CDD1E2050B862003FBF73 /* Ratings.swift */,
+				372CDD202050D1C7003FBF73 /* ResultsViewController.swift */,
 			);
 			path = MoodMap;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				372CDD172050756F003FBF73 /* LoginViewController.swift in Sources */,
 				372CDD1B2050802D003FBF73 /* TableViewCell.swift in Sources */,
 				372CDD1920507F46003FBF73 /* TableViewController.swift in Sources */,
+				372CDD212050D1C7003FBF73 /* ResultsViewController.swift in Sources */,
 				372CDD1D20509F33003FBF73 /* QuestionsVC.swift in Sources */,
 				372CDD1F2050B862003FBF73 /* Ratings.swift in Sources */,
 				372CDCE920506EFA003FBF73 /* AppDelegate.swift in Sources */,
