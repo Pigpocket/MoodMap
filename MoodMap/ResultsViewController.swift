@@ -9,29 +9,29 @@
 import Foundation
 import UIKit
 
-class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RatingCell") as! TableViewCell
-        
-        
-        return cell
-    }
-    
-    // MARK: Lifecycle
+@objc class ResultsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ResultsCell")!
+        
+        cell.textLabel?.text = "Testy"
+        //cell.textLabel?.textColor = UIColor.white
+        cell.detailTextLabel?.text = "96%"
+        //cell.detailTextLabel?.textColor = UIColor.white
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
     }
     
 }

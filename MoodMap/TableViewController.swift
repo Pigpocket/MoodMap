@@ -13,6 +13,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     // MARK: Outlets
     
+    
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var tenureLabel: UILabel!
@@ -23,6 +24,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        userImage.layer.borderColor = UIColor.white.cgColor
+        userImage.layer.borderWidth = 3
     }
     
     override func viewWillAppear(_ animated: Bool) {
