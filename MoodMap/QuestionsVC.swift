@@ -71,7 +71,9 @@ class QuestionsVC: UIViewController {
         // Slider actions for UIControlEvents
         slider.addTarget(self, action: #selector(self.sliderDidEndSliding(notification:)), for: ([.touchUpInside,.touchUpOutside]))
 
-        //self.navigationItem.rightBarButtonItem?.isEnabled = true
+        self.navigationItem.rightBarButtonItem?.isEnabled = false
+        
+        categoryLabel.text = categories[selectedIndex]
     }
     
     override func viewWillAppear(_ animated: Bool) {
