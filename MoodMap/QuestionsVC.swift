@@ -13,6 +13,7 @@ class QuestionsVC: UIViewController {
     
     // MARK: Properties
     
+    
     let questions: [String] = ["I feel like the team is communicating effectively. I know what is expected of me and what to expect of others. When problems arise we work together to find solutions", "This project is being managed effectively. The project manager or team lead understands how to manage team members, resources, processes and deadlines", "Our team is able to achieve deadlines and complete tasks as expected", "We have the skills, experience and resources to complete project tasks on schedule", "Blah blah blah we are able to lorum ipsum dolor and lorem ipsum dolor and etc etc etc for the love of all that is good and well"]
     
     var selectedIndex = 0
@@ -55,8 +56,7 @@ class QuestionsVC: UIViewController {
         questionLabel.text = questions[selectedIndex]
     }
     
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,10 +72,16 @@ class QuestionsVC: UIViewController {
     }
     
     @objc func sliderDidEndSliding(notification: NSNotification) {
+        
         let percentValue = slider.value as NSNumber
+        print(slider.value)
+        Rating.shared.communication = slider.value
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .percent
+    
         percentLabel.text = numberFormatter.string(from: percentValue)
+        
+        print("Communication rating = \(Rating.shared.communication)")
     }
 
 }
