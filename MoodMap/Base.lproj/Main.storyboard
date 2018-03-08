@@ -260,13 +260,12 @@
                                                     <action selector="previousQuestion:" destination="fC7-p8-77y" eventType="touchUpInside" id="Iph-06-xI9"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Nc-PS-cbB">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 / 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASF-Im-3Bd">
                                                 <rect key="frame" x="109.5" y="8" width="101" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <state key="normal" title="1 / 5">
-                                                    <color key="titleColor" red="0.090196078430000007" green="0.074509803920000006" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                            </button>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju7-ov-ESP">
                                                 <rect key="frame" x="210.5" y="8" width="101.5" height="48"/>
                                                 <state key="normal" image="002-arrows-1"/>
@@ -308,6 +307,7 @@
                         <outlet property="backButton" destination="K1l-8a-Iuu" id="6wI-Fe-Aes"/>
                         <outlet property="categoryLabel" destination="FgB-Ty-1oI" id="3Eg-A1-TJd"/>
                         <outlet property="forwardButton" destination="ju7-ov-ESP" id="ekZ-gY-leL"/>
+                        <outlet property="pageIndex" destination="ASF-Im-3Bd" id="eNM-ad-ePz"/>
                         <outlet property="percentLabel" destination="sRw-Hx-2XV" id="Uef-QG-h5Z"/>
                         <outlet property="questionLabel" destination="YhP-wm-0Rw" id="TfA-hc-DVd"/>
                         <outlet property="slider" destination="KAW-Lu-zHC" id="l9C-qv-3oB"/>

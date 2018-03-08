@@ -24,6 +24,7 @@ class QuestionsVC: UIViewController {
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var pageIndex: UILabel!
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var forwardButton: UIButton!
@@ -40,6 +41,7 @@ class QuestionsVC: UIViewController {
         
         questionLabel.text = questions[selectedIndex]
         categoryLabel.text = categories[selectedIndex]
+        pageIndex.text = "\(selectedIndex + 1) / 5"
         
     }
     
@@ -57,6 +59,7 @@ class QuestionsVC: UIViewController {
 
         questionLabel.text = questions[selectedIndex]
         categoryLabel.text = categories[selectedIndex]
+        pageIndex.text = "\(selectedIndex + 1) / 5"
     }
     
 
