@@ -255,6 +255,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="LaG-Em-uyh"/>
                     <connections>
+                        <outlet property="projectNameLabel" destination="P9e-GF-FnM" id="dKg-Jh-CU4"/>
+                        <outlet property="projectPercentLabel" destination="WUg-6U-1GG" id="Bp6-P7-y93"/>
                         <outlet property="submitButton" destination="ulx-Q9-4cA" id="dLI-Jj-kuI"/>
                         <outlet property="submitView" destination="TiT-zb-5Bj" id="P7x-lO-nAX"/>
                     </connections>

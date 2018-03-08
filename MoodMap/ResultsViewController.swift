@@ -16,12 +16,20 @@ import UIKit
     
     // MARK: Outlets
     
+    @IBOutlet weak var projectNameLabel: UILabel!
+    @IBOutlet weak var projectPercentLabel: UILabel!
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var submitView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .percent
+        
+        let labelText = ((Rating.shared.communication + Rating.shared.management + Rating.shared.productivity + Rating.shared.resources + Rating.shared.schedule) / 5) as NSNumber
+        
+        projectPercentLabel.text = numberFormatter.string(from: labelText)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,7 +46,6 @@ import UIKit
         
         cell.textLabel?.text = categories[indexPath.row]
         cell.textLabel?.textColor = UIColor.black
-        
         
         cell.detailTextLabel?.textColor = UIColor.black
         
