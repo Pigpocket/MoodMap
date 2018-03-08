@@ -30,6 +30,7 @@ import UIKit
         let labelText = ((Rating.shared.communication + Rating.shared.management + Rating.shared.productivity + Rating.shared.resources + Rating.shared.schedule) / 5) as NSNumber
         
         projectPercentLabel.text = numberFormatter.string(from: labelText)
+        projectNameLabel.text = "Wireframe UX for mobile"
     }
     
     override func viewWillAppear(_ animated: Bool) {
