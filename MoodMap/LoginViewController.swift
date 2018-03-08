@@ -22,9 +22,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        userImage.layer.borderWidth = 1
+        userImage.layer.masksToBounds = false
+        userImage.layer.borderColor = UIColor.black.cgColor
         userImage.layer.cornerRadius = userImage.frame.height/2
-        userImage.layer.masksToBounds = true
-        userImage.layer.borderWidth = 0
+        userImage.clipsToBounds = true
         
     }
     

@@ -11,14 +11,15 @@ import UIKit
 
 class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    // MARK: Outlets
+    // MARK: Properties
     
+    let projects: [String] = ["Develop customer use cases", "Wireframe UX for mobile", "Develop data architecture", "Cloud platform review for off-premise", "Business case development", "Hire recruiter", "Sign new office lease", "Develop MVP schedule", "Hire hacker from Techfair"]
+    
+    // MARK: Outlets
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var tenureLabel: UILabel!
-    
-    // MARK: Properties
     
     // MARK: Lifecycle
     
@@ -27,6 +28,12 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         userImage.layer.borderColor = UIColor.white.cgColor
         userImage.layer.borderWidth = 3
+        
+        userImage.layer.borderWidth = 1
+        userImage.layer.masksToBounds = false
+        userImage.layer.borderColor = UIColor.black.cgColor
+        userImage.layer.cornerRadius = userImage.frame.height/2
+        userImage.clipsToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,13 +44,13 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProjectCell") as! TableViewCell
 
-        cell.textLabel?.text = "Project"
+        cell.textLabel?.text = projects[indexPath.row]
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 9
     }
     
 }
