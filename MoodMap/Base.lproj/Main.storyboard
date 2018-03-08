@@ -301,6 +301,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="589-8M-QcH"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Sny-RT-U28">
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="Rml-7e-KsX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="backButton" destination="K1l-8a-Iuu" id="6wI-Fe-Aes"/>
                         <outlet property="categoryLabel" destination="FgB-Ty-1oI" id="3Eg-A1-TJd"/>
