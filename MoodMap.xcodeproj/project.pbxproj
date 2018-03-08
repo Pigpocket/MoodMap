@@ -21,6 +21,7 @@
 		3778114D2050EDC70035FB29 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778114C2050EDC70035FB29 /* ResultsViewController.swift */; };
 		3778114F2050EE370035FB29 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3778114E2050EE370035FB29 /* ResultsTableViewCell.swift */; };
 		379B2706205131E3005DF04E /* Projects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B2705205131E3005DF04E /* Projects.swift */; };
+		379B27082051552F005DF04E /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379B27072051552F005DF04E /* ThankYouViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3778114C2050EDC70035FB29 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		3778114E2050EE370035FB29 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
 		379B2705205131E3005DF04E /* Projects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projects.swift; sourceTree = "<group>"; };
+		379B27072051552F005DF04E /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				3778114C2050EDC70035FB29 /* ResultsViewController.swift */,
 				3778114E2050EE370035FB29 /* ResultsTableViewCell.swift */,
 				379B2705205131E3005DF04E /* Projects.swift */,
+				379B27072051552F005DF04E /* ThankYouViewController.swift */,
 			);
 			path = MoodMap;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				372CDD1D20509F33003FBF73 /* QuestionsVC.swift in Sources */,
 				372CDD1F2050B862003FBF73 /* Ratings.swift in Sources */,
 				372CDCE920506EFA003FBF73 /* AppDelegate.swift in Sources */,
+				379B27082051552F005DF04E /* ThankYouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
