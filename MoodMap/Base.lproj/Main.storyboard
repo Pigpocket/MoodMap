@@ -217,6 +217,13 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgB-Ty-1oI">
+                                        <rect key="frame" x="65" y="8" width="184" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -296,6 +303,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="K1l-8a-Iuu" id="6wI-Fe-Aes"/>
+                        <outlet property="categoryLabel" destination="FgB-Ty-1oI" id="3Eg-A1-TJd"/>
                         <outlet property="forwardButton" destination="ju7-ov-ESP" id="ekZ-gY-leL"/>
                         <outlet property="percentLabel" destination="sRw-Hx-2XV" id="Uef-QG-h5Z"/>
                         <outlet property="questionLabel" destination="YhP-wm-0Rw" id="TfA-hc-DVd"/>
